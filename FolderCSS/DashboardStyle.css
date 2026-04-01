@@ -306,11 +306,16 @@ body nav ul li:nth-of-type(1) a{
     position: relative;
 }
 .container .content .card:nth-child(9) img{
-    position: absolute;
-    right: 0px;
-    bottom: 10px;
-    opacity: 0.1;
-    width: 150px;
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+        opacity: 0.1;
+        width: 150px;
+    }
+@media(max-width: 768px){
+    .container .content .card:nth-child(9) img{
+        display: none;
+    }
 }
 .container .content .card:nth-child(9) .time-line{
     margin-left: 10px;

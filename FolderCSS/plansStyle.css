@@ -16,6 +16,11 @@ body nav ul li:last-child a{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
 }
+@media(max-width: 768px){
+    .container .perant .content{
+        grid-template-columns: 1fr;
+    }
+}
 .container .perant .content .card{
     border-radius: 0%;
     --discount-color: white;
