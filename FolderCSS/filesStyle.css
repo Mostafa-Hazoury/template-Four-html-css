@@ -1,0 +1,155 @@
+:root{
+    --main-color: black;
+    --secand-color: rgb(179, 179, 179);
+    --color-blue: rgb(0, 119, 255);
+    --time-transation: 0.3s;
+    --focus-link-color: #f1f1f1;
+}
+body nav ul li:nth-of-type(7) a{
+    background-color: #f1f1f1
+}
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container .perant .content{
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+.container .perant .content .Files{
+    flex: 2 2 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+}
+.container .perant .content .Files .box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.container .perant .content .Files .box .icon{
+    color: gray;
+}
+.container .perant .content .Files .file{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container .perant .content .Files .file img{
+    width: 70px;
+    transition: var(--time-transation);
+}
+.container .perant .content .Files .box:hover .file img{
+    transform: rotate(5deg);
+}
+.container .perant .content .Files .file span{
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.container .perant .content .Files .get{
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.container .perant .content .Files .date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: 14px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+.container .perant .content .Files-Statistics{
+    background-color: white;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 10px;
+    flex: 1;
+}
+.container .perant .content .Files-Statistics h3{
+    margin: 0px;
+    font-size: 25px;
+}
+.container .perant .content .Files-Statistics .box{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 15px 0px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.container .perant .content .Files-Statistics .box i{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.container .perant .content .Files-Statistics .box:first-of-type i{
+    color: rgb(0, 89, 255);
+    background-color: rgb(0, 89, 255, 0.1);
+}
+.container .perant .content .Files-Statistics .box:nth-of-type(2) i{
+    color: rgb(0, 189, 0);
+    background-color: rgb(0, 189, 0, 0.1);
+}
+.container .perant .content .Files-Statistics .box:nth-of-type(3) i{
+    color: rgb(255, 30, 0);
+    background-color: rgb(255, 30, 0, 0.1);
+}
+.container .perant .content .Files-Statistics .box:last-of-type i{
+    color: rgb(255, 196, 0);
+    background-color: rgba(255, 145, 0, 0.1);
+}
+.container .perant .content .Files-Statistics .box .text{
+    flex: 1;
+    min-width: 100px;
+    font-size: 14px;
+}
+.container .perant .content .Files-Statistics .box .text span:first-child{
+    display: block;
+    margin-bottom: 10px;
+}
+.container .perant .content .Files-Statistics .box .text span:last-child{
+    color: gray;
+}
+.container .perant .content .Files-Statistics .box .size{
+    font-size: 13px;
+    color: gray;
+}
+.container .perant .content .Files-Statistics a{
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: 0px auto;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border-radius: 5px;
+}
+.container .perant .content .Files-Statistics a::before{
+    font-family: "Font Awesome 7 Free";
+    content: "\f102";
+    font-weight: 900;
+    margin-right: 15px;
+    position: relative;
+}
+.container .perant .content .Files-Statistics a:hover::before{
+    animation: arrow 0.6s linear 0s infinite alternate both;
+}
+@keyframes arrow{
+    0%,
+    100%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 3px;
+    }
+}

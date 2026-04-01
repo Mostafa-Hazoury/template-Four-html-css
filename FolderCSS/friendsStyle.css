@@ -1,0 +1,100 @@
+:root{
+    --main-color: black;
+    --secand-color: rgb(179, 179, 179);
+    --color-blue: rgb(0, 119, 255);
+    --time-transation: 0.3s;
+    --focus-link-color: #f1f1f1;
+}
+body nav ul li:nth-of-type(6) a{
+    background-color: #f1f1f1
+}
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container .perant .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.container .content .contact i{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: gray;
+    background-color: #eee;
+    margin-right: 5px;
+    transition: var(--time-transation);
+}
+.container .content .contact i:hover{
+    color: white;
+    background-color: rgb(0, 89, 255);
+}
+.container .content .introduction{
+    margin-block: 20px;
+    text-align: center;
+}
+.container .content .introduction img{
+    border-radius: 50%;
+    width: 120px;
+}
+.container .content .introduction p{
+    margin-bottom: 5px;
+}
+.container .content .introduction span{
+    font-size: 14px;
+    color: gray;
+}
+.container .content .infoes{
+    padding: 10px 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.container .content .card:first-child .infoes::after,
+.container .content .card:nth-child(6) .infoes::after,
+.container .content .card:nth-child(8) .infoes::after,
+.container .content .card:nth-child(9) .infoes::after{
+    content: "VIP";
+    font-size: 40px;
+    font-weight: 900;
+    color: red;
+    opacity: 0.1;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container .content .infoes .info{
+    margin: 10px 0px;
+    font-size: 15px;
+}
+.container .content .infoes .info span{
+    margin-left: 5px;
+}
+.container .content .setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.container .content .setting .join{
+    font-size: 14px;
+    color: gray;
+}
+.container .content .setting .add span{
+    padding: 5px 8px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container .content .setting .add span:first-child{
+    background-color: rgb(0, 110, 255);
+}
+.container .content .setting .add span:last-child{
+    background-color: rgb(245, 59, 26);
+}

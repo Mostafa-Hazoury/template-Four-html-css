@@ -1,0 +1,561 @@
+:root{
+    --main-color: black;
+    --secand-color: rgb(179, 179, 179);
+    --color-blue: rgb(0, 119, 255);
+    --time-transation: 0.3s;
+    --focus-link-color: #f1f1f1;
+}
+body nav ul li:nth-of-type(1) a{
+    background-color: #f1f1f1
+}
+.container .content .card:nth-child(1){
+    padding: 0px 0px 20px;
+}
+.container .content .card:first-child .box:first-child{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 20px 20px 10px;
+}
+.container .content .card:first-child .box img{
+    width: 200px;
+}
+.container .content .card:first-child > img{
+    width: 70px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: -35px 20px 20px;
+}
+.container .content .card:first-child .box:last-of-type{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 0px 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container .content .card:first-child .box:last-of-type p span{
+    display: block;
+    margin-top: 15px;
+    color: gray;
+    font-size: 15px;
+}
+.container .content .card:first-child > span{
+    display: block;
+    text-align: right;
+    padding: 0px 20px;
+}
+.container .content .card:first-child > span a{
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--color-blue);
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.container .content .card:nth-child(2) input,
+.container .content .card:nth-child(2) textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #e3e3e3;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.container .content .card:nth-child(2) form{
+    text-align: right;
+}
+.container .content .card:nth-child(2) textarea{
+    resize: none;
+    height: 180px;
+}
+.container .content .card:nth-child(2) button{
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--color-blue);
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .content .card:nth-child(3) .box{
+    display: flex;
+    gap: 1.5rem;
+    margin: 15px 0px;
+    --icon-color: black;
+    --icon-background-color: black;
+}
+.container .content .card:nth-child(3) .box:first-of-type{
+    --icon-color: rgb(0, 110, 255);
+    --icon-background-color: rgb(0, 110, 255, 0.5);
+}
+.container .content .card:nth-child(3) .box:nth-child(4){
+    --icon-color: rgb(255, 153, 0);
+    --icon-background-color: rgb(255, 217, 0, 0.3);
+}
+.container .content .card:nth-child(3) .box:last-of-type{
+    --icon-color: rgb(0, 204, 0);
+    --icon-background-color: rgba(0, 204, 0, 0.3);
+}
+.container .content .card:nth-child(3) .box .icon i{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--icon-background-color);
+    color: var(--icon-color);
+}
+.container .content .card:nth-child(3) .box .stats{
+    flex: 1;
+}
+.container .content .card:nth-child(3) .box .stats p{
+    color: gray;
+    margin: 5px 0px;
+    font-size: 14px;
+}
+.container .content .card:nth-child(3) .box .stats > span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.container .content .card:nth-child(3) .box .stats div{
+    width: 100%;
+    height: 4px;
+    background-color: var(--icon-background-color);
+    margin-top: 10px;
+}
+.container .content .card:nth-child(3) .box .stats div span{
+    position: relative;
+    display: block;
+    height: 4px;
+    background-color: var(--icon-color);
+}
+.container .content .card:nth-child(3) .box .stats div span::after{
+    content: attr(data-progress);
+    padding: 5px;
+    background-color: var(--icon-color);
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-150%);
+}
+.container .content .card:nth-child(3) .box .stats div span::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid;
+    border-color: var(--icon-color) transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-130%);
+}
+.container .content .card:nth-child(4) .boxes{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.container .content .card:nth-child(4) .boxes .box{
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.container .content .card:nth-child(4) .boxes .box i{
+    font-size: 30px;
+}
+.container .content .card:nth-child(4) .boxes .box:nth-child(1) i{
+    color: rgb(255, 166, 0);
+}
+.container .content .card:nth-child(4) .boxes .box:nth-child(2) i{
+    color: rgb(0, 110, 255);
+}
+.container .content .card:nth-child(4) .boxes .box:nth-child(3) i{
+    color: rgb(0, 173, 0);
+}
+.container .content .card:nth-child(4) .boxes .box:nth-child(4) i{
+    color: rgb(255, 38, 0);
+}
+.container .content .card:nth-child(4) .boxes .box span:first-of-type{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.container .content .card:nth-child(4) .boxes .box span:last-of-type{
+    color: gray;
+    font-size: 13px;
+    margin: -10px 0px 10px;
+}
+.container .content .card:nth-child(5) .boxes .box{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+.container .content .card:nth-child(5) .boxes .box:not(:last-child),
+.container .content .card:nth-child(6) .box:not(:last-child),
+.container .content .card:nth-child(8) .box:not(:last-child){
+    border-bottom: 1px solid #ddd;
+}
+.container .content .card:nth-child(5) .boxes .box img{
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.container .content .card:nth-child(5) .boxes .box .text,
+.container .content .card:nth-child(8) .box .text{
+    flex: 1;
+    padding-right: 5px;
+}
+.container .content .card:nth-child(5) .boxes .box .text h3{
+    margin: 0px;
+    font-size: 17px;
+}
+.container .content .card:nth-child(5) .boxes .box .text p{
+    font-size: 14px;
+    color: gray;
+    margin: 8px 0px;
+}
+.container .content .card:nth-child(5) .boxes .box .date,
+.container .content .card:nth-child(8) .box .size{
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+@media(max-width: 768px){
+    .container .content .card:nth-child(5) .boxes .box{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+.container .content .card:nth-child(6) .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.container .content .card:nth-child(6) .box .text h3{
+    margin: 0px;
+    font-size: 17px;
+}
+.container .content .card:nth-child(6) .box .text p{
+    color: gray;
+    margin: 8px 0px 0px;
+}
+.container .content .card:nth-child(6) .box:nth-of-type(4){
+    opacity: 0.3;
+}
+.container .content .card:nth-child(6) .box:nth-of-type(4) .text del:first-child{
+    display: block;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.container .content .card:nth-child(6) .box i{
+    transition: var(--time-transation);
+    cursor: pointer;
+    padding-left: 10px;
+}
+.container .content .card:nth-child(6) .box i:hover{
+    color: red;
+}
+.container .content .card:nth-child(7) .header,
+.container .content .card:nth-child(7) .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .card:nth-child(7) .header{
+    color: gray;
+}
+.container .content .card:nth-child(7) .box span{
+    padding: 5px 10px;
+    background-color: #ececec;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.container .content .card:nth-child(8) .box{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.container .content .card:nth-child(8) .box img{
+    margin-right: 10px;
+    width: 40px;
+}
+.container .content .card:nth-child(8) .box .text p{
+    margin: 0px 0px 3px;
+}
+.container .content .card:nth-child(8) .box .text span{
+    font-size: 14px;
+    color: gray;
+}
+.container .content .card:nth-child(9){
+    position: relative;
+}
+.container .content .card:nth-child(9) img{
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    opacity: 0.1;
+    width: 150px;
+}
+.container .content .card:nth-child(9) .time-line{
+    margin-left: 10px;
+    padding-left: 30px;
+    border-left: 2px solid rgb(0, 110, 255);
+}
+.container .content .card:nth-child(9) .time-line p{
+    margin: 30px 0px;
+    position: relative;
+}
+.container .content .card:nth-child(9) .time-line p:last-child{
+    margin: 0px;
+}
+.container .content .card:nth-child(9) .time-line p:not(:last-child)::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(14, 147, 255);
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -31px;
+    transform: translate(-50%,-50%);
+}
+.container .content .card:nth-child(9) .time-line p::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 2px solid rgb(14, 147, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -31px;
+    transform: translate(-50%,-50%);
+}
+.container .content .card:nth-child(9) .time-line p:nth-child(4)::after{
+    animation: task 2s ease 0s infinite alternate both;
+}
+@keyframes task{
+    0%,
+    100%{
+        background-color: rgb(14, 147, 255);
+    }
+    50%{
+        background-color: white;
+    }
+}
+.container .content .card:nth-child(10) .text{
+    margin-bottom: 15px;
+    margin-left: 50px;
+    position: relative;
+    --color-box: black;
+    display: flex;
+    flex-direction: column;
+}
+.container .content .card:nth-child(10) .text::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-box);
+    border-radius: 50%;
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container .content .card:nth-child(10) .text::after{
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: var(--color-box);
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+.container .content .card:nth-child(10) .text:first-of-type:before,
+.container .content .card:nth-child(10) .text:first-of-type::after{
+    --color-box: rgb(14, 147, 255);
+}
+.container .content .card:nth-child(10) .text:nth-of-type(2)::before,
+.container .content .card:nth-child(10) .text:nth-of-type(2)::after{
+    --color-box: rgb(0, 173, 0);
+}
+.container .content .card:nth-child(10) .text:nth-of-type(3)::before,
+.container .content .card:nth-child(10) .text:nth-of-type(3)::after{
+    --color-box: rgb(255, 166, 0);
+}
+.container .content .card:nth-child(10) .text:last-of-type:before,
+.container .content .card:nth-child(10) .text:last-of-type::after{
+    --color-box: rgb(255, 38, 0);
+}
+.container .content .card:nth-child(10) .text p{
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px 0px 8px;
+}
+.container .content .card:nth-child(10) .text span{
+    font-size: 12px;
+    color: gray;
+}
+.container .content .card:nth-child(11) .box:first-of-type{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.container .content .card:nth-child(11) .box:first-of-type img{
+    width: 50px;
+}
+.container .content .card:nth-child(11) .box:first-of-type .text h3{
+    font-size: 18px;
+    margin: 0px 0px 10px;
+}
+.container .content .card:nth-child(11) .box:first-of-type .text p{
+    margin: 0;
+    color: gray;
+}
+.container .content .card.card:nth-child(11) > p{
+    font-size: 18px;
+    word-spacing: 1px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.container .content .card:nth-child(11) .box:last-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-weight: 500;
+}
+.container .content .card:nth-child(12) .box:first-of-type{
+    margin-top: 25px;
+    --color-transparent: rgba(0, 174, 255, 0.3);
+    --color-not-transparent: rgb(0, 140, 255);
+}
+.container .content .card:nth-child(12) .box:nth-of-type(2){
+    --color-transparent: rgba(0, 89, 255, 0.3);
+    --color-not-transparent: rgb(0, 89, 255);
+}
+.container .content .card:nth-child(12) .box:nth-of-type(3){
+    --color-transparent: rgba(255, 0, 0, 0.3);
+    --color-not-transparent: rgb(255, 0, 0);
+}
+.container .content .card:nth-child(12) .box:last-of-type{
+    --color-transparent: rgba(39, 115, 255, 0.3);
+    --color-not-transparent: rgb(33, 110, 255);
+}
+.container .content .card:nth-child(12) .box{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 10px;
+    background-color: var(--color-transparent);
+}
+.container .content .card:nth-child(12) .box i{
+    height: 60px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--color-not-transparent);
+    margin-right: 20px;
+    transition: var(--time-transation);
+}
+.container .content .card:nth-child(12) .box i:hover{
+    transform: rotate(5deg);
+}
+.container .content .card:nth-child(12) .box p{
+    flex: 1;
+    color: var(--color-not-transparent);
+}
+.container .content .card:nth-child(12) .box a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-not-transparent);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.container .content .card:last-child{
+    overflow-x: auto;
+    min-width: 0;
+}
+.container .content .card:last-child table{
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 1000px;
+    width: 100%;
+}
+.container .content .card:last-child table th,
+.container .content .card:last-child table td{
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.container .content .card:last-child table tr{
+    transition: var(--time-transation);
+}
+.container .content .card:last-child table tr:hover{
+    background-color: rgb(238, 238, 238, 0.3);
+}
+.container .content .card:last-child table thead{
+    background-color: #eee;
+}
+.container .content .card:last-child table thead tr th:nth-child(1),
+.container .content .card:last-child table thead tr th:nth-child(3){
+    width: 250px;
+}
+.container .content .card:last-child table thead tr th:nth-child(2){
+    width: 150px;
+}
+.container .content .card:last-child table thead tr th:nth-child(4){
+    width: 100px;
+}
+.container .content .card:last-child table thead tr th:nth-child(5),
+.container .content .card:last-child table thead tr th:nth-child(6){
+    width: 200px;
+}
+.container .content .card:last-child table img{
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.container .content .card:last-child table img:not(:first-of-type){
+    margin-left: -20px;
+}
+.container .content .card:last-child table tr a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(0, 202, 67);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+}
+.container .content .card:last-child table tbody tr:first-of-type a{
+    background-color: rgb(255, 166, 0);
+}
+.container .content .card:last-child table tbody tr:nth-child(2) a{
+    background-color: rgb(0, 119, 255);
+}
+.container .content .card:last-child table tbody tr:nth-child(5) a{
+    background-color: rgb(255, 8, 0);
+}

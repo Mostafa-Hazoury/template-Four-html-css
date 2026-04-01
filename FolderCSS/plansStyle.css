@@ -1,0 +1,108 @@
+:root{
+    --main-color: black;
+    --secand-color: rgb(179, 179, 179);
+    --color-blue: rgb(0, 119, 255);
+    --time-transation: 0.3s;
+    --focus-link-color: #f1f1f1;
+}
+body nav ul li:last-child a{
+    background-color: #f1f1f1
+}
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container .perant .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+.container .perant .content .card{
+    border-radius: 0%;
+    --discount-color: white;
+}
+.container .perant .content .card:first-of-type{
+    --discount-color: rgb(0, 170, 0);
+}
+.container .perant .content .card:nth-of-type(2){
+    --discount-color: rgb(0, 89, 255);
+}
+.container .perant .content .card:last-of-type{
+    --discount-color: rgb(255, 174, 0);
+}
+.container .perant .content .card .discount{
+    width: 100%;
+    background-color: var(--discount-color);
+    outline: 3px solid var(--discount-color);
+    color: white;
+    outline-offset: 3px;
+    padding: 30px 0px;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+.container .perant .content .card .discount span{
+    display: block;
+}
+.container .perant .content .card .discount span:last-child{
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.container .content .card ul{
+    margin: 15px 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.container .content .card ul li{
+    padding: 15px 0px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.container .content .card ul li::before{
+    font-family: "Font Awesome 7 Free";
+    content: "\f00c";
+    font-weight: 900;
+    padding-right: 10px;
+    color: rgb(0, 211, 0);
+}
+.container .content .card:not(:last-child) ul li:last-child:before,
+.container .content .card:not(:last-child) ul li:nth-of-type(8):before,
+.container .content .card:first-child ul li:nth-of-type(4):before,
+.container .content .card:first-child ul li:nth-of-type(5):before,
+.container .content .card:first-child ul li:nth-of-type(6):before,
+.container .content .card:first-child ul li:nth-of-type(7):before{
+    content: "\f00d";
+    color: rgb(255, 51, 0);
+}
+.container .content .card ul li::after{
+    font-family: "Font Awesome 7 Free";
+    content: "\f129";
+    font-weight: 900;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+    border-radius: 50%;
+    background-color: #bbb;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.container .content .card a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 500;
+    background-color: var(--discount-color);
+    border-radius: 5px;
+}
+.container .content .card p:last-child{
+    text-align: center;
+    color: gray;
+    margin-bottom: 0px;
+}
